@@ -72,6 +72,56 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Stylesheet */
+
+.carousel {
+	color: #170724;
+  
+	--carousel-button-bg: #fff;
+	--carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
+	  0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  
+	--carousel-button-svg-width: 20px;
+	--carousel-button-svg-height: 20px;
+  
+	--carousel-button-svg-stroke-width: 2.5;
+  }
+  
+  .carousel .carousel__button:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #A78BFA;
+  }
+  
+  .carousel .carousel__button.is-prev {
+	left: -1.5rem;
+  }
+  
+  .carousel .carousel__button.is-next {
+	right: -1.5rem;
+  }
+  
+  .carousel .carousel__dots {
+	color: #7E22CE;
+  }
+  
+  #mainCarousel .carousel__slide {
+	width: 100%;
+	padding: 0;
+  }
+  
+  #thumbCarousel .carousel__slide {
+	width: 88px;
+	padding: 0.75rem;
+  }
+  
+  #thumbCarousel .carousel__slide img {
+	border-radius: 6px;
+  }
+  
+  #thumbCarousel .carousel__slide.is-nav-selected img {
+	box-shadow: 0 0 0 4px #A78BFA;
+  }
+
 /* Basic */
 
 	@-ms-viewport {
@@ -1140,9 +1190,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 

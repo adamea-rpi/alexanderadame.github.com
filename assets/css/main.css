@@ -1664,7 +1664,9 @@ input, select, textarea {
 			opacity: 0;
 		}
 /* main box of insta */  
-.insta {  
+
+.insta {
+	align-items: center;  
 	width: 150px;  
 	height: 150px;  
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);  
@@ -1675,6 +1677,7 @@ input, select, textarea {
 
   /* innerbox in insta box */  
 .innerbox {  
+	align-items: center;
 	width: 120px;  
 	height: 120px;  
 	border: 10px solid #fff;  
@@ -1686,6 +1689,7 @@ input, select, textarea {
  
   /* center circle of insta */  
   .innerbox::before {  
+	align-items: center;
 	content: '';  
 	width: 45px;  
 	height: 45px;  
@@ -1696,6 +1700,7 @@ input, select, textarea {
   }  
   /* top right circle of insta */  
   .innerbox::after {  
+	align-items: center;
 	content: '';  
 	width: 10px;  
 	height: 10px;  

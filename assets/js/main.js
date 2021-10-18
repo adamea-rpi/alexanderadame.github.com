@@ -13,7 +13,7 @@
 		$footer = $('#footer'),
 		$main = $('#main'),
 		$main_articles = $main.children('article');
-		
+
 		// Slideshow
 		var slideIndex = 1;
 		showSlides(slideIndex);
@@ -44,7 +44,7 @@
 		slides[slideIndex-1].style.display = "block";
 		dots[slideIndex-1].className += " active";
 		captionText.innerHTML = dots[slideIndex-1].alt;
-		}	 
+	}	 
 
 	// Breakpoints.
 		breakpoints({
